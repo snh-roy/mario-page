@@ -53,8 +53,6 @@
 .menu-button {
   display: none;
 }
-
-/* Responsive adjustments specific to phone screens */
 @media (max-width: 768px) {
   /* Show menu button and hide the header-nav by default */
   .menu-button {
@@ -98,17 +96,5 @@
 
   .header-nav li a:hover {
     color: #ddd; /* Change color on hover */
-  }
-
-  /* Hide the regular desktop menu styles */
-  .navbar-fixed-top .header-nav {
-    display: none;
-  }
-
-  /* Only show the menu button and the header-nav in phone mode */
-  .navbar-fixed-top .menu-button,
-  .navbar-fixed-top .header-nav.active {
-    display: block;
-    color: #333;
   }
 }
