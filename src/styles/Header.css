@@ -21,6 +21,7 @@
 
 /* Style for the links */
 .header-nav li a {
+  font-family: 'Roboto Mono', monospace;
   text-decoration: none;
   color: black;
   padding: 5px 10px;
