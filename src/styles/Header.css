@@ -5,6 +5,8 @@
   padding: 0;
   display: flex; /* Ensures the list items are displayed in a row */
   gap: 20px; /* Adjust the space between the links */
+  margin-left: 395px; /* Adjust the left margin */
+  margin-top: 50px;
 }
 
 .header-nav li {
@@ -12,22 +14,21 @@
 }
 
 .header-nav li:not(:last-child)::after {
-  content: "|"; /* Keeps the separator between items */
   position: absolute;
   right: -10px; /* Adjusts the spacing between text and vertical bar */
-  color: #333; /* Adjust the color of the separator */
+  color: #565353; /* Adjust the color of the separator */
 }
 
 /* Style for the links */
 .header-nav li a {
   text-decoration: none;
-  color: inherit; /* Ensures the link inherits the text color */
+  color: black; /* Ensures the link inherits the text color */
   padding: 5px 10px; /* Adjust padding for the clickable area */
   transition: color 0.3s ease; /* Adds a subtle hover effect */
 }
 
 .header-nav li a:hover {
-  color: #555; /* Change color on hover if desired */
+  color: #000000; /* Change color on hover if desired */
 }
 
 .navbar-fixed-top{
@@ -35,6 +36,79 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Regular Navigation Styles (Desktop) */
+.header-nav {
+  list-style-type: none; /* Removes the bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensures the list items are displayed in a row */
+  gap: 20px; /* Adjust the space between the links */
+  margin-left: 395px; /* Adjust the left margin */
+  margin-top: 50px;
+}
+
+/* Hide menu button and menu by default */
+.menu-button {
+  display: none;
+}
+
+/* Responsive adjustments specific to phone screens */
+@media (max-width: 768px) {
+  /* Show menu button and hide the header-nav by default */
+  .menu-button {
+    display: block;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }
+
+  .header-nav {
+    display: none; /* Hide the navigation menu initially */
+    flex-direction: column; /* Stack the items vertically */
+    position: absolute;
+    top: 60px; /* Position it below the header */
+    left: 0;
+    background-color: #333; /* Background color for the dropdown */
+    width: 100%; /* Full width dropdown */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add some shadow */
+    z-index: 9999;
+    padding: 10px 0;
+  }
+
+  .header-nav.active {
+    display: flex; /* Show the menu when active */
+  }
+
+  .header-nav li {
+    margin: 10px 0; /* Space out the menu items */
+    text-align: center; /* Center the text */
+    padding-left: 0; /* No indent for dropdown items */
+  }
+
+  .header-nav li a {
+    padding: 10px; /* Increase clickable area */
+    color: rgb(12, 12, 12); /* Ensure text color is visible */
+    display: block; /* Make the links take up the full width */
+  }
+
+  .header-nav li a:hover {
+    color: #ddd; /* Change color on hover */
+  }
+
+  /* Hide the regular desktop menu styles */
+  .navbar-fixed-top .header-nav {
+    display: none;
+  }
+
+  /* Only show the menu button and the header-nav in phone mode */
+  .navbar-fixed-top .menu-button,
+  .navbar-fixed-top .header-nav.active {
+    display: block;
+    color: #333;
+  }
 }

@@ -3,8 +3,8 @@ import '../styles/Home.css';
 
 function Home() {
   const sentences = [
-    'computer science student, software engineer and tech enthusiast',
-    'Music junkie and a photographer wannabe'
+    'Mario Gegprifti',
+    'a computer science student, software engineer and tech enthusiast',
   ];
 
   const [displayedText, setDisplayedText] = useState('');
@@ -35,7 +35,7 @@ function Home() {
     <div>
       <section className="hero-section">
         <div className="hero-content">
-          <h1>Hello, I am a:</h1>
+          <h1>Hello, I am</h1>
           <h2 className="typing-text">{displayedText}</h2>
         </div>
       </section>
@@ -62,13 +62,13 @@ function Home() {
         </div>
         <div className="about-links">
           <h2>Links</h2>
-          <p>
-            <a href="https://github.com/mariocodesforfun" target="_blank" rel="noopener noreferrer">GitHub</a> | 
-            <a href="https://www.linkedin.com/in/mario-gegprifti-346b97b9" target="_blank" rel="noopener noreferrer"> LinkedIn</a> | 
-            <a href="https://www.instagram.com/mario.g21_/" target="_blank" rel="noopener noreferrer"> Instagram</a>
+          <p >
+            <a href="https://github.com/mariocodesforfun" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/mario-gegprifti-346b97b9" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/mario.g21_/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
           </p>
           <p>
-            <a href="mailto:gegpriftimario@gmail.com">gegpriftimario@gmail.com</a>
+            <a href="mailto:gegpriftimario@gmail.com">[gegpriftimario@gmail.com]</a>
           </p>
         </div>
       </section>
