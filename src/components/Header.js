@@ -6,8 +6,8 @@ function Header() {
     <nav class="navbar  navbar-fixed-top navbar-inverse">
       <ul className="header-nav">
         <li><Link to="/home">01 : Home</Link></li>
-        <li><Link to="/blog">02 : Resume</Link></li>
-        <li><Link to="/resume">03 : Blog</Link></li>
+        <li><Link to="/resume">02 : Resume</Link></li>
+        <li><Link to="/blog">03 : Blog</Link></li>
       </ul>
     </nav>
   );
