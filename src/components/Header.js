@@ -9,16 +9,22 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
   return (
     <nav className="navbar navbar-fixed-top navbar-inverse">
-      <div className="menu-button" onClick={toggleMenu}>
-        <span>&#9776;</span>
+      <div className="menu-container">
+        <div className="menu-button" onClick={toggleMenu}>
+          <span>&#9776;</span>
+        </div>
+        <ul className={`header-nav ${menuOpen ? 'active' : ''}`}>
+          <li><Link to="/home" onClick={closeMenu}>01 : Home</Link></li>
+          <li><Link to="/resume" onClick={closeMenu}>02 : Resume</Link></li>
+          <li><Link to="/blog" onClick={closeMenu}>03 : Blog</Link></li>
+        </ul>
       </div>
-      <ul className={`header-nav ${menuOpen ? 'active' : ''}`}>
-        <li><Link to="/home">01 : Home</Link></li>
-        <li><Link to="/resume">02 : Resume</Link></li>
-        <li><Link to="/blog">03 : Blog</Link></li>
-      </ul>
     </nav>
   );
 }
