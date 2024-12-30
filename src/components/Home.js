@@ -46,7 +46,7 @@ function Home() {
           <p>
           My name is Mario Gegprifti. I am currently pursuing a Bachelor of Science in Computer Science
           at Baruch College. I work as a Software Engineer II at Rexera,
-          where I focus on building new features and enhancing platform efficiency. Currently I am working in a
+          where I focus on building new features and enhancing platform efficiency. Currently I am working on a
           very excitin AI project.
           I am passionate about finance, programming and AI, and leveraging technology to solve complex problems.
           </p>
