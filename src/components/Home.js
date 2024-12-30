@@ -45,18 +45,18 @@ function Home() {
           <h2>Hi there!</h2>
           <p>
           My name is Mario Gegprifti. I am currently pursuing a Bachelor of Science in Computer Science
-          with a concentration in Financial Mathematics at Baruch College. I work as a Software Engineer II at Rexera,
-          where I focus on building new features and enhancing platform efficiency.
-          I am passionate about finance, programming, and leveraging technology to solve complex problems.
+          at Baruch College. I work as a Software Engineer II at Rexera,
+          where I focus on building new features and enhancing platform efficiency. Currently I am working in a
+          very excitin AI project.
+          I am passionate about finance, programming and AI, and leveraging technology to solve complex problems.
           </p>
 
           <p>Currently, I am:</p>
           <p>
           <ul>
-            <li>Taking Algorithms and Maths classes</li>
-            <li>Bulding new platform features at Rexera</li>
-            <li>Grinding Leet Code</li>
-            <li>Looking for new opportunites</li>
+            <li>Learning DSA the proper way</li>
+            <li>Working on cool AI stuff at Rexera</li>
+            <li>Aprendiendo Español</li>
           </ul>
           </p>
         </div>
